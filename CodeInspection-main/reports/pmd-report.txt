@@ -1,0 +1,4 @@
+src/main/java/labcodeinspection/Email.java:6:	ImmutableField:	ImmutableField: Field 'lastName' may be declared final
+src/main/java/labcodeinspection/Email.java:7:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'password'
+src/main/java/labcodeinspection/Email.java:9:	ImmutableField:	ImmutableField: Field 'defaultpasswordLength' may be declared final
+src/main/java/labcodeinspection/Email.java:23:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)

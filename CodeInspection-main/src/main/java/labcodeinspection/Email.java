@@ -2,20 +2,20 @@ package labcodeinspection;
 
 public class Email {
 
-	private String m_firstName;
-	private String m_lastName;
+	private String firstName; //NOPMD This field will be manipulated later
+	private String lastName;
 	private String password = null;
 	private String department;
 	private int defaultpasswordLength = 8;
 	private String email;
 
 	public Email(String firstName, String lastName) {
-		this.m_firstName = firstName;
-		this.m_lastName = lastName;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
 
 	public void showInfo() {
-		System.out.println("\nFIRST NAME= " + m_firstName + "\nLAST NAME= " + m_lastName);
+		System.out.println("\nFIRST NAME= " + firstName + "\nLAST NAME= " + lastName);
 		System.out.println("DEPARMENT= " + department + "\nEMAIL= " + email + "\nPASSWORD= " + password);
 	}
 
@@ -45,7 +45,7 @@ public class Email {
 
 	public void generateEmail() {
 		this.password = this.randomPassword(this.defaultpasswordLength);
-		this.email = this.m_firstName.toLowerCase() + this.m_lastName.toLowerCase() + "@" + this.department
+		this.email = this.firstName.toLowerCase() + this.lastName.toLowerCase() + "@" + this.department
 				+ ".espol.edu.ec";
 	}
 }
