@@ -10,13 +10,23 @@
     </description>
 
     <rule ref="category/java/performance.xml" />
-
     <rule ref="category/java/bestpractices.xml"> 
         <exclude name="SystemPrintln" /> 
     </rule>
+    <rule ref="category/java/design.xml/ImmutableField" /> 
+	<rule ref="category/java/design.xml/UseUtilityClass"> 
+		<priority>1</priority> 
+	</rule> 
 
-    <rule ref="category/java/design.xml/ImmutableField" />
-    <rule ref="category/java/design.xml/UseUtilityClass"> 
-        <priority>1</priority> 
+	<rule ref="category/java/codestyle.xml/ClassNamingConventions" />	
+	<rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions" />
+    <rule ref="category/java/documentation.xml/CommentRequired">
+        <properties>
+            <property name="classCommentRequirement" value="Ignored"/>
+            <property name="fieldCommentRequirement" value="Ignored"/>
+            <property name="methodWithOverrideCommentRequirement" value="Ignored" />
+        </properties>
     </rule>
+    
+    
 </ruleset>
